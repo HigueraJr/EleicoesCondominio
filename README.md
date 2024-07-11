@@ -1,1 +1,1 @@
-Trabalho feito a partir de um projeto da faculdade ,simulação de uma eleição de condominio online,tenho o banco de dados também.
+Trabalho feito a partir de um projeto da faculdade ,simulação de uma eleição de condominio online,tenho o banco de dados também. O eleitor tem acesso ao voto online,escolhendo chapas,cadidatos,todos os seus direitos online!
