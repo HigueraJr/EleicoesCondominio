@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cargo</title>
+    <link rel="stylesheet" href="Css/cadastrar_cargo.css">
+</head>
+<body>
+    <div class="vale">
+        <h1>Eleição online Condomínio Vale</h1>
+       </div> 
+<div class="container">
+    
+    <h2>Cadastrar Cargo</h2>
+    <form id="cargoForm">
+        <div>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+        </div>
+        <div>
+        <select type="checbox">
+            <label for="eleicao">Eleição:</label>
+               <input type="date" required>
+            </select>
+        </div>
+            <a href="/index.html"><button type="submit">Cadastrar</button required></a>
+            <a href="/index.html"><button type="submit">Voltar</button required></a>
+    <div class="footer">© 2024 Condomínio Vale</div>                  
+</div>                
+    </form>
+    
+    <script src="../../public/script.js"></script>
+    <script src="../../controllers/CargoController.js"></script>
+    <script src="../../models/CargoModel.js"></script>
+    <script>
+        // Inicializar o controlador e a tela de cadastro de cargo
+        const model = new CargoModel();
+        const view = {
+            render: function () {
+                // Lógica para renderizar a view
+            }
+        };
+        const controller = new CargoController(model, view);
+        controller.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    font: 15pt Arial, sans-serif;
+    margin-top: 10%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    padding: 10px;
+    color: #555555;
+    font-size: 12pt;
+}
+
+a.btn-candidato, a.btn-eleitor {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+button {
+    background-color: #4caf50; /* Verde médio */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde escuro ao passar o mouse */
+}
+
+.vale {
+    width: 100%;
+    height: 150px;
+    background-color: #2e7d32; /* Verde mais escuro */
+    font: 16pt 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vale h1 {
+    margin: 0;
+}

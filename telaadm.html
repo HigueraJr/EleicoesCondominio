@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="Css/telaadm.css">
+</head>
+<body>
+    <div class="vale">
+        <h1>Eleição online Condomínio Vale</h1>
+       </div> 
+    <div class="container">
+        <h2>Painel do Administrador</h2>
+        <nav>
+            <ul>
+                <li><a href="cadastrar_candidato.html">Cadastrar Candidato</a></li>
+                <li><a href="cadastrar_cargo.html">Cadastrar Cargo</a></li>
+                <li><a href="cadastrar_eleicao.html">Cadastrar Eleição</a></li>
+                <li><a href="cadastrar_chapa.html">Cadastrar Chapa</a></li>
+                <li><a href="cadastrar_candidato_chapa.html">Cadastrar Candidato na Chapa</a></li>
+                <li><a href="cadastrar_eleitor.html">Cadastrar Eleitor</a></li>
+            </ul>
+        </nav>
+        <div class="footer">© 2024 Condomínio Vale</div>
+    </div>
+    <script src="../../public/script.js"></script>
+    <script src="../../controllers/AdminController.js"></script>
+    <script src="../../models/AdminModel.js"></script>
+    <script>   
+     const model = new AdminModel();
+    const view = {
+        render: function () {
+                
+         }
+        };
+        const controller = new AdminController(model, view);
+        controller.init();
+    </script>
+</body>
+</html>
+

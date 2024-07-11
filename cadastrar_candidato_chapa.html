@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Candidato na Chapa</title>
+    <link rel="stylesheet" href="Css/cadastrar_candidato_chapa.css">
+</head>
+<body>
+    <div class="vale">
+        <h1>Eleição online Condomínio Vale</h1>
+       </div> 
+<div class="container">
+    
+    <h2>Cadastrar Candidato na Chapa</h2>
+    <form id="candidatoChapaForm">
+        <div>
+            <label for="chapa">Chapa:</label>
+            <select id="chapa" name="chapa" required>
+            </select>
+        </div>
+        <div>
+            <label for="cargo">Cargo:</label>
+            <select id="cargo" name="cargo" required>
+            </select>
+        </div>
+        <div>
+            <label for="candidato">Candidato:</label>
+            <select id="candidato" name="candidato" required>
+            </select>
+        </div>       
+        <button id="button" type="submit">Cadastrar</button>
+        
+    </form>
+<a href="/index.html"><Button id="voltar">Voltar</Button></a>
+<div class="footer">© 2024 Condomínio Vale</div> 
+</div> 
+    <script src="../../public/script.js"></script>
+    <script src="../../controllers/CandidatoChapaController.js"></script>
+    <script src="../../models/CandidatoChapaModel.js"></script>
+    <script>
+        const view = {
+            render: function () {
+            },
+            populateSelect: function (selectId, options) {
+                const select = document.getElementById(selectId);
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option.id;
+                    opt.textContent = option.nome;
+                    select.appendChild(opt);
+                });
+            }
+        };
+        const model = new CandidatoChapaModel();
+        const controller = new CandidatoChapaController(model, view);
+        controller.init();
+    </script>
+</body>
+</html>
